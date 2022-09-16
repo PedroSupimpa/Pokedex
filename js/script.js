@@ -49,7 +49,7 @@ const renderPokemon = async (pokemon) => { //function async dnv pois e preciso e
 
     if(data.id >= 650){
         pokemonImage.style.display = 'none';
-        pokemonName.innerHTML = 'Not found :c';
+        pokemonName.innerHTML = 'Not found :c!';
         pokemonNumber.innerHTML = '';
         input.value ='';
 
@@ -57,9 +57,8 @@ const renderPokemon = async (pokemon) => { //function async dnv pois e preciso e
     }
 }
 
-    form.addEventListener('submit', (event) => {
+form.addEventListener('submit', (event) => {
     event.preventDefault();    
-
     renderPokemon(input.value.toLowerCase());
     
 
