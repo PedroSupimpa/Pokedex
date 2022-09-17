@@ -31,6 +31,23 @@ main{
 
 
 }
+
+.pokemon__type {
+
+position: absolute;
+bottom: 73%;
+left: 19%;
+font-weight: 600;
+padding: 0.5%;
+border: 2px solid black;
+border-radius:5px  ;
+font-size: clamp(6,7vw,12px);
+color: black;
+
+
+
+}
+
 .pokemon__image{
     position: absolute;
     bottom: 55%;
@@ -99,3 +116,12 @@ font-size: clamp(8px , 5vw,25px);
     box-shadow: inset -4px 4px 0 #222;
     font-size: 0.9rem;
 }
+
+
+
+
+
+
+
+
+

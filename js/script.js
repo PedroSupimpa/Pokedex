@@ -8,6 +8,7 @@ const form = document.querySelector('.form');
 const input = document.querySelector('.input__seach');
 const buttonNext = document.querySelector('.btn-next');
 const buttonPrev = document.querySelector('.btn-prev');
+const pokemonType = document.querySelector('.pokemon__type');
 
 let seachPokemon = 1;
 
@@ -27,6 +28,7 @@ const APIresponse =  await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
 const renderPokemon = async (pokemon) => { //function async dnv pois e preciso esperar o fetchpokemon retornar
         pokemonName.innerHTML = 'Loading ...';
         pokemonNumber.innerHTML = '';
+        pokemonType.innerHTML = '';
    
     const data = await fetchPokemon(pokemon);
 
@@ -35,6 +37,7 @@ const renderPokemon = async (pokemon) => { //function async dnv pois e preciso e
         pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default']
         pokemonName.innerHTML = data.name;
         pokemonNumber.innerHTML = data.id;
+        pokemonType.innerHTML = data['types']['0']['type']['name']
         input.value = '';
         seachPokemon = data.id;    //assim apos uma seach o seach e atualizado p id atual
 
@@ -42,6 +45,7 @@ const renderPokemon = async (pokemon) => { //function async dnv pois e preciso e
         pokemonImage.style.display = 'none';
         pokemonName.innerHTML = 'Not found :c';
         pokemonNumber.innerHTML = '';
+        pokemonType.innerHTML = '';
         input.value ='';
 
 
@@ -51,11 +55,22 @@ const renderPokemon = async (pokemon) => { //function async dnv pois e preciso e
         pokemonImage.style.display = 'none';
         pokemonName.innerHTML = 'Not found :c!';
         pokemonNumber.innerHTML = '';
+        pokemonType.innerHTML = '';
         input.value ='';
 
 
     }
 }
+
+
+if (pokemonType == 'grass') {
+ 
+
+
+}
+
+
+
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();    
@@ -81,6 +96,7 @@ form.addEventListener('submit', (event) => {
         }
         });
         
+    
 
             renderPokemon(seachPokemon);
     
