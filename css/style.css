@@ -36,17 +36,25 @@ main{
 
 position: absolute;
 bottom: 73%;
-left: 19%;
+left: 15%;
 font-weight: 600;
 padding: 0.5%;
-border: 2px solid black;
-border-radius:5px  ;
 font-size: clamp(6,7vw,12px);
-color: black;
-
-
-
+color:#fff;
+border-radius: 20px;
 }
+.pokemon__type1 {
+
+    position: absolute;
+    bottom: 73%;
+    left: 26%;
+    font-weight: 600;
+    padding: 0.5%;
+    font-size: clamp(6,7vw,12px);
+    color:#fff;
+    border-radius: 20px;
+    }
+
 
 .pokemon__image{
     position: absolute;
@@ -119,9 +127,79 @@ font-size: clamp(8px , 5vw,25px);
 
 
 
-
-
-
-
-
-
+    .fire{
+        background: #F08030;
+        border: 1px solid #9C531F;
+    }
+    .grass{
+    background: #78C850;
+    border: 1px solid #4E8234;
+    }
+    .water{
+        background: #6890F0;
+        border: 1px solid #445E9C;
+    }
+    .normal{
+        background: #A8A878;
+        border: 1px solid #6D6D4E;
+    }
+    .electric{
+        background: #F8D030;
+        border: 1px solid #A1871F;
+    }
+    .ice{
+        background: #98D8D8;
+        border: 1px solid #638D8D;
+    }
+    .fight{
+        background: #C03028;
+        border: 1px solid #7D1F1A;
+    }
+    .poison{ 
+    background: #A040A0;
+    border: 1px solid #682A68;
+    }
+    .ground{
+        background: #E0C068;
+        border: 1px solid #927D44;
+    
+    }
+    .flying{ 
+        background: #A890F0;
+        border: 1px solid #6D5E9C;
+    }
+    .psychc{ 
+        background: #F85888;
+        border: 1px solid #A13959;
+    }
+    .bug{
+        background: #A8B820;
+        border: 1px solid #6D7815;
+    }
+    .rock{
+        background: #B8A038;
+        border: 1px solid #786824;
+    }
+    .ghost{
+        background: #705898;
+        border: 1px solid #493963;
+    }
+    .dragon{ 
+        background: #7038F8;
+        border: 1px solid #4924A1;
+    }
+    .dark{ 
+        background: #705848;
+        border: 1px solid #49392F;
+    }
+    .steel{ 
+        background: #B8B8D0;
+        border: 1px solid #787887;
+    }
+    .fairy{
+        background: #EE99AC;
+        border: 1px solid #9B6470;
+    }
+    .hidden {
+        display: none;
+     }
